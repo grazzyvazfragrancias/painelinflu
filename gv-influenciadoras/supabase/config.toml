@@ -1,0 +1,5 @@
+# Só usado se você publicar pela linha de comando (supabase functions deploy painel).
+# A Bagy não envia login, então a função "painel" não exige JWT.
+# A rota /admin confere sozinha se quem chamou é administradora.
+[functions.painel]
+verify_jwt = false
